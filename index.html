@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cash Stash Raleigh — Find the stash. Win cash.</title>
+  <meta name="description" content="Cash Stash Raleigh: we hide cash in the city and post clues. Find it first, win. Sponsored by local businesses." />
+  <meta name="theme-color" content="#0b0f19" />
+  <meta property="og:title" content="Cash Stash Raleigh" />
+  <meta property="og:description" content="Find the stash. Win cash. Follow for clues + drops." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://cashstashraleigh.com" />
+  <meta property="og:image" content="https://cashstashraleigh.com/og-image.png" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="index.html" aria-label="Cash Stash Raleigh Home">
+        <span class="brand__mark">💸</span>
+        <span class="brand__text">Cash Stash <span class="muted">Raleigh</span></span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <button class="nav__toggle" aria-expanded="false" aria-controls="navMenu">
+          <span class="sr-only">Toggle menu</span>
+          ☰
+        </button>
+        <div id="navMenu" class="nav__menu">
+          <a href="#how">How it works</a>
+          <a href="#drops">Drops</a>
+          <a href="#sponsors">Sponsors</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+
+      <div class="header__cta">
+        <a class="btn btn--ghost" target="_blank" rel="noreferrer" href="https://instagram.com/cashstashraleigh">Instagram</a>
+        <a class="btn btn--primary" target="_blank" rel="noreferrer" href="https://tiktok.com/@cashstashraleigh">TikTok</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="pill">📍 Raleigh • Local • Real cash</p>
+          <h1>Find the stash. <span class="grad">Win cash.</span></h1>
+          <p class="lead">
+            We hide money in the city, then post clues. First person to find it wins.
+            Local sponsors get a shoutout + real-world attention.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#drops">See today’s drop format</a>
+            <a class="btn btn--ghost" href="#sponsor">Become a sponsor</a>
+          </div>
+
+          <div class="hero__stats">
+            <div class="stat">
+              <div class="stat__num" id="statDrops">—</div>
+              <div class="stat__label">Drops completed</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num" id="statWinners">—</div>
+              <div class="stat__label">Winners</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num" id="statTotal">—</div>
+              <div class="stat__label">Total cash hidden</div>
+            </div>
+          </div>
+
+          <p class="tiny muted">Tip: Save this site to your home screen for quick clue access.</p>
+        </div>
+
+        <div class="hero__card" aria-label="Drop Card">
+          <div class="card">
+            <div class="card__top">
+              <h2 class="card__title">Today’s Drop</h2>
+              <span class="badge" id="dropStatus">Check socials</span>
+            </div>
+
+            <div class="card__body">
+              <div class="row">
+                <span class="muted">Time window</span>
+                <span id="dropTime">Usually posted on TikTok/IG</span>
+              </div>
+              <div class="row">
+                <span class="muted">City</span>
+                <span>Raleigh, NC</span>
+              </div>
+              <div class="row">
+                <span class="muted">Rules</span>
+                <span>One winner • Be respectful • No trespassing</span>
+              </div>
+
+              <div class="divider"></div>
+
+              <p class="muted">Where clues drop:</p>
+              <div class="socials">
+                <a class="chip" target="_blank" rel="noreferrer" href="https://instagram.com/cashstashraleigh">IG @cashstashraleigh</a>
+                <a class="chip" target="_blank" rel="noreferrer" href="https://tiktok.com/@cashstashraleigh">TikTok @cashstashraleigh</a>
+              </div>
+            </div>
+
+            <div class="card__footer">
+              <a class="btn btn--primary btn--full" target="_blank" rel="noreferrer"
+                 href="https://instagram.com/cashstashraleigh">
+                 Go to clues →
+              </a>
+              <p class="tiny muted">Found it? Take a pic/video + tag us.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container marquee" aria-label="Marquee">
+        <div class="marquee__track">
+          <span>💸 Cash Stash</span><span>📍 Raleigh</span><span>🧩 Clues</span><span>🏆 Winner</span><span>📣 Sponsors</span>
+          <span>💸 Cash Stash</span><span>📍 Raleigh</span><span>🧩 Clues</span><span>🏆 Winner</span><span>📣 Sponsors</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="how" class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2>How it works</h2>
+          <p class="muted">Simple. Fair. Local. Fast.</p>
+        </div>
+
+        <div class="grid3">
+          <div class="panel">
+            <h3>1) We hide the stash</h3>
+            <p>Cash is hidden in a public-access area. No trespassing. No digging. No damage.</p>
+          </div>
+          <div class="panel">
+            <h3>2) You get clues</h3>
+            <p>Clues drop on TikTok/IG (sometimes multiple rounds). First to find it wins.</p>
+          </div>
+          <div class="panel">
+            <h3>3) Winner verified</h3>
+            <p>We confirm with a quick selfie/video + location context, then post the winner.</p>
+          </div>
+        </div>
+
+        <div class="callout">
+          <div>
+            <h3>Want better odds?</h3>
+            <p class="muted">Turn on notifications for both TikTok + IG so you see clues instantly.</p>
+          </div>
+          <div class="callout__actions">
+            <a class="btn btn--ghost" target="_blank" rel="noreferrer" href="https://tiktok.com/@cashstashraleigh">Notify on TikTok</a>
+            <a class="btn btn--primary" target="_blank" rel="noreferrer" href="https://instagram.com/cashstashraleigh">Notify on IG</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="drops" class="section section--alt">
+      <div class="container">
+        <div class="section__head">
+          <h2>Drops</h2>
+          <p class="muted">Example formats + what to expect.</p>
+        </div>
+
+        <div class="grid2">
+          <div class="panel">
+            <h3>Classic Drop</h3>
+            <ul class="list">
+              <li>One main clue image/video</li>
+              <li>Optional follow-up hints in comments</li>
+              <li>Winner posted same day</li>
+            </ul>
+          </div>
+          <div class="panel">
+            <h3>Sponsored Drop</h3>
+            <ul class="list">
+              <li>Sponsored shoutout in the clue video</li>
+              <li>Business gets pinned comment + link in bio mention</li>
+              <li>Optional “go visit sponsor for bonus hint”</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="panel">
+          <h3>Rules (keep it fun)</h3>
+          <ul class="list">
+            <li>No trespassing, no climbing fences, no entering closed areas.</li>
+            <li>Don’t disturb property, landscaping, or wildlife.</li>
+            <li>Be respectful to others searching—no pushing, blocking, or harassment.</li>
+            <li>If you’re first, grab it and move on (don’t camp the spot).</li>
+          </ul>
+          <p class="tiny muted">We reserve the right to void a win if rules are broken.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="sponsors" class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2>Sponsors</h2>
+          <p class="muted">Local businesses fuel the drops. We fuel the attention.</p>
+        </div>
+
+        <div class="grid3">
+          <div class="panel">
+            <h3>What sponsors get</h3>
+            <ul class="list">
+              <li>Shoutout in the drop video</li>
+              <li>Tag + pinned comment</li>
+              <li>Story reposts (IG)</li>
+              <li>Optional “winner visits sponsor” clip</li>
+            </ul>
+          </div>
+          <div class="panel">
+            <h3>Best for</h3>
+            <ul class="list">
+              <li>Restaurants & coffee shops</li>
+              <li>Gyms & fitness</li>
+              <li>Dentists / salons / barbers</li>
+              <li>Landscaping & home services</li>
+            </ul>
+          </div>
+          <div class="panel">
+            <h3>Packages</h3>
+            <p class="muted">You can keep this flexible:</p>
+            <ul class="list">
+              <li>Starter: shoutout + tag</li>
+              <li>Plus: shoutout + pinned comment + story</li>
+              <li>Premium: plus winner content + follow-up post</li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="sponsor" class="panel panel--highlight">
+          <h3>Become a sponsor</h3>
+          <p class="muted">
+            Fill this out and we’ll reply with options. (This form uses Formspree — free tier.)
+          </p>
+
+          <!-- Formspree: create a free form and replace the action URL below -->
+          <form class="form" action="https://formspree.io/f/yourFormID" method="POST">
+            <div class="form__row">
+              <label>
+                Business name
+                <input name="businessName" required placeholder="e.g., Patriot Landscaping" />
+              </label>
+              <label>
+                Your name
+                <input name="name" required placeholder="Your name" />
+              </label>
+            </div>
+
+            <div class="form__row">
+              <label>
+                Email
+                <input type="email" name="email" required placeholder="you@business.com" />
+              </label>
+              <label>
+                Phone (optional)
+                <input name="phone" placeholder="(###) ###-####" />
+              </label>
+            </div>
+
+            <label>
+              What do you want to promote?
+              <textarea name="message" rows="5" placeholder="Tell us your goal, offer, and ideal drop date."></textarea>
+            </label>
+
+            <input type="hidden" name="_subject" value="New Cash Stash Sponsor Inquiry" />
+            <button class="btn btn--primary" type="submit">Send sponsor request</button>
+            <p class="tiny muted">Or DM us: @cashstashraleigh</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section section--alt">
+      <div class="container">
+        <div class="section__head">
+          <h2>FAQ</h2>
+          <p class="muted">Quick answers for new hunters.</p>
+        </div>
+
+        <div class="accordion">
+          <details>
+            <summary>Is it real cash?</summary>
+            <p>Yes. The stash is real money hidden in a safe, public-access spot.</p>
+          </details>
+          <details>
+            <summary>How do I know someone didn’t fake it?</summary>
+            <p>Winners are verified with a quick selfie/video at the location + the stash item.</p>
+          </details>
+          <details>
+            <summary>Where are drops?</summary>
+            <p>Raleigh area. We rotate locations to keep it fair and fun.</p>
+          </details>
+          <details>
+            <summary>Can families play?</summary>
+            <p>Yes—just follow the rules and be respectful of others.</p>
+          </details>
+          <details>
+            <summary>Do you do collabs?</summary>
+            <p>Yep. Creators and businesses can collab—use the contact form below.</p>
+          </details>
+        </div>
+
+        <div class="panel">
+          <h3>Safety + respect</h3>
+          <p class="muted">
+            Please don’t trespass, don’t damage anything, and don’t put yourself in traffic.
+            If a location seems unsafe, skip it.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2>Contact</h2>
+          <p class="muted">Questions, collabs, press, or tips.</p>
+        </div>
+
+        <div class="grid2">
+          <div class="panel">
+            <h3>DM us</h3>
+            <p class="muted">Fastest response:</p>
+            <p>
+              <a target="_blank" rel="noreferrer" href="https://instagram.com/cashstashraleigh">Instagram @cashstashraleigh</a><br/>
+              <a target="_blank" rel="noreferrer" href="https://tiktok.com/@cashstashraleigh">TikTok @cashstashraleigh</a>
+            </p>
+          </div>
+
+          <div class="panel">
+            <h3>Email us</h3>
+            <p class="muted">Use Formspree or your own email provider.</p>
+
+            <!-- Replace with your email or another Formspree form -->
+            <form class="form" action="https://formspree.io/f/yourFormID" method="POST">
+              <label>
+                Your email
+                <input type="email" name="email" required placeholder="you@example.com" />
+              </label>
+              <label>
+                Message
+                <textarea name="message" rows="5" placeholder="What’s up?"></textarea>
+              </label>
+              <button class="btn btn--ghost" type="submit">Send message</button>
+            </form>
+          </div>
+        </div>
+
+        <p class="tiny muted">
+          Disclaimer: Cash Stash is not affiliated with any city or park agency. Play at your own risk.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <div class="brand brand--small">
+          <span class="brand__mark">💸</span>
+          <span class="brand__text">Cash Stash <span class="muted">Raleigh</span></span>
+        </div>
+        <p class="tiny muted">© <span id="year"></span> Cash Stash Raleigh. All rights reserved.</p>
+      </div>
+
+      <div class="footer__links">
+        <a href="#how">How it works</a>
+        <a href="#sponsor">Sponsor</a>
+        <a href="#faq">FAQ</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
