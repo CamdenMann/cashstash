@@ -14,9 +14,9 @@ if (year) year.textContent = new Date().getFullYear();
 
 // Simple stats you can edit later (or wire to a real backend)
 const stats = {
-  dropsCompleted: 15+,   // change these anytime
-  winners: 15+,
-  totalCash: 2000+
+  dropsCompleted: 40+,   // change these anytime
+  winners: 40+,
+  totalCash: 5000+
 };
 
 const statDrops = document.getElementById("statDrops");
